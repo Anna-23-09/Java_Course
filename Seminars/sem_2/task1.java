@@ -6,29 +6,30 @@ import java.util.Scanner;
 public class task1 {
 
     public static void main(String[] args) {
-//        String a="aaaaaaaabbbbbbccccccmmmmmcccccccd";
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Введите строку: ");
-        String str = scanner.nextLine();
-        char first = str.charAt(0);
-        int count = 1;
+try (//        String a="aaaaaaaabbbbbbccccccmmmmmcccccccd";
+        Scanner scanner = new Scanner(System.in)) {
+            System.out.print("Введите строку: ");
+            String str = scanner.nextLine();
+            char first = str.charAt(0);
+            int count = 1;
 
-        StringBuilder res = new StringBuilder();
-        for (int i = 1; i < str.length(); i++) {
-            if (first == str.charAt(i)) {
-                count++;
-            } else {
-                if (count > 0)
-                    res.append(first).append(count);
-                count = 1;
-                first = str.charAt(i);
+            StringBuilder res = new StringBuilder();
+            for (int i = 1; i < str.length(); i++) {
+                if (first == str.charAt(i)) {
+                    count++;
+                } else {
+                    if (count > 0)
+                        res.append(first).append(count);
+                    count = 1;
+                    first = str.charAt(i);
+                }
             }
+            if (count > 0)
+                res.append(first).append(count);
+            else
+                res.append(first);
+            System.out.println(res);
         }
-        if (count > 0)
-            res.append(first).append(count);
-        else
-            res.append(first);
-        System.out.println(res);
     }
 
     // public static void main(String[] args) {
