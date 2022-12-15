@@ -1,6 +1,7 @@
-import java.until.Collections;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
+import java.util.ListIterator;
 
 public class sem_3 {
     public static void main(String[] args) {
@@ -20,8 +21,33 @@ public class sem_3 {
 
 
         ArrayList<Integer> list1 = new ArrayList<>();
-        System.out.println(list1);
+        list1.add(2);
+        list1.add(4);
+
         int i = list.indexOf(3);
-        list.clear();
+
+        //list.clear();
+        list.size();
+
+        List list2 = list.subList(2, 4);
+        list.equals(5);
+        // list.retainAll(list2);       
+
+        // for (int j = 0; j < list.size(); j++) {
+        //     System.out.println(list.get(j));
+        //     list.remove(j);
+        // }
+
+        // for (int in: list) {
+        //     System.out.println(in);
+        // }
+
+        // ListIterator<Integer> iterator = list.listIterator();
+        // while (iterator.hasNext()) {
+        //     int it = iterator.next();
+        //     iterator.remove();
+        // }
+
+        list.forEach(n -> System.out.println(n));
     }
 }

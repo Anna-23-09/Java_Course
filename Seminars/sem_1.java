@@ -1,7 +1,5 @@
 import java.util.Random;
 
-import java.util.Random;
-
 /**
  * sem_1
  */
@@ -13,6 +11,7 @@ public class sem_1 {
         char ch = 'f';
         long l = 12l;
         int i = (int) l;
+        System.out.println(ch);
 
         int[] arrI = new int [5];
         arrI[2] = 7;
@@ -39,14 +38,19 @@ public class sem_1 {
         str.length();
         String str4 = "One Two Three";
         String[] sA = str4.split(" ");
+        System.out.println(b);
+        System.out.println(sA);
 
         Integer.parseInt("12");
         Integer.max(1, 5);
-        Integer.toBinaryString(i: 17);
+        Integer.toBinaryString(17);
 
 
         int r0 = (int) (Math.random()*200 - 100);
         int r1 = (int) (Math.random())*200 - 100;
+
+        System.out.println(r0);
+        System.out.println(r1);
 
         Random rnd = new Random();
         rnd.setSeed(73457); // при задании точно знаем первые случайные числа
@@ -65,20 +69,3 @@ public class sem_1 {
 /**
  * sem_1
  */
-public class sem_1 {
-
-    public static void main(String[] args) {
-        Random rnd = new Random();
-        for (int i = 0; i < 10; i++) {
-            int n = rnd.nextInt(10);
-
-        if (n > 7) {
-            System.out.println("Number " + n + " > 7");            
-        } else if (n < 7) {
-            System.out.println("Number " + n + " < 7");      
-        } else {
-            System.out.println("Number " + n + " = 7"); 
-        }
-    }
-}
-}

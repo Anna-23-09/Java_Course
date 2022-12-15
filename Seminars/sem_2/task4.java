@@ -13,7 +13,8 @@ public class task4 {
     }
 
     public static void writing (String[] args) {
-        File logg = new File(D:\Аня\Geek Brains\Java\Seminars\sem_2\logg.txt);
+        File logg = new File(Object logg;
+        D:\Аня\Geek Brains\Java\Seminars\sem_2\logg.txt);
         
     }
 }
